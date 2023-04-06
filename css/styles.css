@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    
+    
+    --branco:#E4E4E4;
+    --dourado:#C5A961;
+    --black:#000;
+    --preto:#1C1C1C;
+    --hover:#FFFFFF3D;
+    
+    
+    color: var(--branco);
+
+}
+
+body{
+    background-color: var(--black);
+    padding: 0px 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0px;
+    
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: var(--black);
+
+
+}
+
+.header_navbar{
+
+}
+
+
+
+.header_navbar__menu{
+    display: flex;
+    gap: 40px;
+}
+.header_navbar__menu > li > a{
+    display: block;
+    padding: 8px;
+    height: 30px;
+
+}
+.header_navbar__menu > li > a:hover{
+    border-bottom: 2px solid var(--dourado);
+}
+
+
+
+.header__toogleMobile{
+    display: none;
+}
+
+
+
+
+/*edição do conteúdo*/
+.destaque{
+    color: var(--dourado);
+}
+.container_principal{
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    height: 85vh;
+}
+
+
+.container_principal__perfil{
+    display: flex;
+    align-items: center;
+}
+
+.container_principal__perfil > img{
+    border-radius: 50%;
+}
+
+.container_principal__perfil > div h5{
+
+    margin-left: 16px;
+}
+
+
+.container_principal__perfil > div p{
+    margin-left: 16px;
+    font-size: 12px;
+}
+
+.container_principal > button{
+
+    background-color: transparent;
+    border: 1px solid var(--dourado);
+    border-radius: 4px;
+    padding: 16px 38px;
+    width: 250px;
+}
+
+
+.container_principal > button:hover{
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+
+
+
+/*Edição da seção de serviços oferecidos*/
+
+.container_servicos{
+
+    position: relative;
+    width: 100%;
+
+   
+}
+
+.container_servicos > h2{
+    margin-bottom: 30px;
+}
+
+.container_servicos > h2::before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: -40px;
+    width: 400px;
+    height: 1px;
+    background-color: var(--hover);
+}
+
+.container_servicos__list{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+
+
+}
+
+.card.artistica{
+    background-image: url("/images/artistico-modal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 260px;
+    border-radius: 4px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.card.artistica:hover{
+    
+    
+
+}
+
+
+
+.cta_servicos.card{  
+    background-color: transparent;  
+    padding: 12px 0px;
+   
+}
+
+
+.cta_servicos.card button{  
+    color: var(--dourado);  
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+.modal_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--hover);
+    width: 60vw;
+    padding: 0px 20px;
+    border-radius: 6px;
+    padding-bottom: 30px;
+
+    display: none;
+
+}
+
+.modal_description > img{
+    width: 60vw;
+    height: 200px;
+}
+
+.modal_description > h4{
+    font-size: 22px;
+}
+
+.modal_description > p{
+    font-size: 16px;
+}
+
+.modal_description > div > button{
+    font-size: 16px;
+    background-color: transparent;
+    border:none;
+
+}
+
+
+.cta_servicos{
+    background-color: var(--dourado);
+    width: 220px;
+    height: 40px;
+    padding: 12px 40px;
+    border-radius: 4px;
+}
+
+.modal_description ativo{
+    display: none;
+}
+
+
+
+/*Estilo da seção de depoimentos*/
+.container_depoimentos{
+    padding-top: 30px;
+    
+
+    
+
+
+}
+
+.container_depoimentos__list {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+.container_depoimentos__list > div{
+    height: 420px;
+    width: 260px;
+    background-color: var(--hover);
+    border-radius: 4px;
+    padding-bottom:30px ;
+}
+
+.container_depoimentos__list > div > img{
+    width: 260px;
+    height: 150px;
+    margin-bottom: 12px;
+    border-radius: 4px 4px  0px 0px;
+
+}
+
+.container_depoimentos__list > div > h4,p{
+    padding: 0px 20px;
+}
+
+.container_depoimentos__list > div > h4{
+    margin-bottom: 12px;
+}
+
+
+
+/*Projetos edição seção*/
+
+
+.container_projetos{
+
+    margin-bottom: 100px;
+}
+
+.container_projetos > h2{
+    margin: 30px 0px;
+}
+.container_projetos__list{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.container_projetos__list > div{
+    height: 300px;
+    width: 260px;
+    border-radius: 4px;
+    background-color: var(--hover);
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    border-top: 1px solid var(--hover);
+    padding-top: 50px;
+}
